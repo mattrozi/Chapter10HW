@@ -11,6 +11,10 @@ class Patient:
         self.__phoneNumber=phone
         self.__VetStatus=veteran_status
 
+
+    def get_name(self):
+        return self.__name
+
     def get_patientID(self):
         return self.__Identification
 
@@ -19,3 +23,9 @@ class Patient:
 
     def get_phone_number(self):
         return self.__phoneNumber
+
+    def get_vet_status(self):
+        return self.__VetStatus
+
+
+
