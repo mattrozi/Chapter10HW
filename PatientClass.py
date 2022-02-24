@@ -5,7 +5,7 @@
 class Patient:
 
     def __init__(self, patientID, name, address,phone,veteran_status):
-        self.__Identification = patientID
+        self.__Identification = int(patientID)
         self.__name = name
         self.__address=address
         self.__phoneNumber=phone

@@ -8,11 +8,11 @@ The Procedure class should have accessor methods only for each attribute.
 
 '''
 class Procedure:
-    def __init__(self, procedure_name, dateProcedure, practioner,charges_for_procedure,patientID):
+    def __init__(self, procedure_name, dateProcedure, practitoner,charges_for_procedure,patientID):
         self.__nameProcedure=procedure_name
         self.__procedureDate=dateProcedure
-        self.__practioner=practioner
-        self.__charges=charges_for_procedure
+        self.__practitoner=practitoner
+        self.__charges=int(charges_for_procedure)
         self.__id=patientID
 
 
@@ -21,6 +21,9 @@ class Procedure:
 
     def get_date(self):
         return self.__procedureDate
+
+    def get_practitoner(self):
+        return self.__practitoner
 
     def get_charges(self):
         return self.__charges
