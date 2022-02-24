@@ -35,17 +35,19 @@ def main():
 
 
     
-    if my_Procedure1.get_id==my_patient.get_patientID:
+    if my_Procedure1.get_id()==my_patient.get_patientID():
         total_charges+=my_Procedure1.get_charges()
-    #if my_Procedure2.get_id==my_patient.get_patientID:
-       # total_charges+=my_Procedure1.get_charges()
-    #if my_Procedure3.get_id==my_patient.get_patientID:
-       # total_charges+=my_Procedure3.get_charges()
+    if my_Procedure2.get_id()==my_patient.get_patientID():
+        total_charges+=my_Procedure2.get_charges()
+    if my_Procedure3.get_id()==my_patient.get_patientID():
+        total_charges+=my_Procedure3.get_charges()
 
-    if my_patient.get_vet_status=="TRUE":
-        total_charges*=.40
+    if my_patient.get_vet_status()=="TRUE":
+        total_charges*=.60
+
     
-    print("Total Charges: ",total_charges)
+    print()
+    print("Total Charges: $",format(total_charges,',.2f'))
     
 
 
